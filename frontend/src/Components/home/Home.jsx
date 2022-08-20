@@ -11,6 +11,11 @@ export const Home = () => {
     navigate("/admin");
   };
 
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    navigate("/");
+  };
+
   return (
     <>
       <Navbar type="HomePage" />
@@ -19,6 +24,7 @@ export const Home = () => {
         <div className={styles.btnDiv}>
           <button onClick={handleClick}>Admin Panel</button>
         </div>
+        <button onClick={handleLogout}>Log Out</button>
       </div>
     </>
   );
