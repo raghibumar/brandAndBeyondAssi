@@ -1,0 +1,29 @@
+.login {
+  width: 400px;
+  margin: auto;
+  margin-top: 50px;
+  border: 1px solid transparent;
+  margin-top: 160px;
+}
+.upDiv{
+    
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+input{
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+}
+.butnDiv{
+    width: 96%;
+    
+}
+.submit{
+    width: 100%;
+    background-color: gray;
+    color: #FFFFFF;
+    font-size: 24px;
+}

@@ -1,0 +1,9 @@
+.maindiv {
+  width: 600px;
+  margin: auto;
+}
+.btnDiv{
+    margin: auto;
+    width: 60%;
+    margin-top: 20px;
+}

@@ -1,0 +1,32 @@
+.register {
+  width: 400px;
+  margin: auto;
+  margin-top: 50px;
+  border: 1px solid transparent;
+}
+input{
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+}
+.upDiv{
+    
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.user{
+    margin: auto;
+    width: 40%;
+}
+.butnDiv{
+    width: 96%;
+    
+}
+.submit{
+    width: 100%;
+    background-color: gray;
+    color: #FFFFFF;
+    font-size: 24px;
+}

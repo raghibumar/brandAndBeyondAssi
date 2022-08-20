@@ -1,0 +1,9 @@
+.mainDiv {
+  width: 340px;
+  margin: auto;
+}
+.inDiv {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
