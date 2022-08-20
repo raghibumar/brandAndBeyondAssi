@@ -16,7 +16,7 @@ const Admin = () => {
         },
       })
       .then((res) => setData(res.data))
-      .catch((err) => navigate("/"),alert("You are not Admin"));
+      .catch((err) => navigate("/"));
   }, []);
 
   const handleLogout = () => {
