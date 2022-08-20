@@ -23,8 +23,8 @@ export const Home = () => {
         <h1>Hi welcome to homepage</h1>
         <div className={styles.btnDiv}>
           <button onClick={handleClick}>Admin Panel</button>
+          <button onClick={handleLogout}>Log Out</button>
         </div>
-        <button onClick={handleLogout}>Log Out</button>
       </div>
     </>
   );
