@@ -20,7 +20,7 @@ const Register = () => {
     let mobile = Number(mob);
 
     axios
-      .post("http://localhost:8080/api/register", {
+      .post("https://loginadmin1.herokuapp.com/api/register", {
         name,
         email,
         mobile,

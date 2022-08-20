@@ -10,13 +10,13 @@ const Admin = () => {
   console.log(tokn);
   useEffect(() => {
     axios
-      .get("http://localhost:8080/api/users", {
+      .get("https://loginadmin1.herokuapp.com/api/users", {
         headers: {
           token: "bearer " + tokn,
         },
       })
       .then((res) => setData(res.data))
-      .catch((err) =>alert("You are not an Admin"), navigate("/"));
+      .catch((err) => alert("You are not an Admin"), navigate("/"));
   }, []);
   return (
     <>

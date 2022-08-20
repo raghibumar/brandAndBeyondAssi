@@ -18,9 +18,13 @@ const Login = () => {
     const { email, password } = data;
 
     axios
-      .post("http://localhost:8080/api/login", { email, password })
+      .post("https://loginadmin1.herokuapp.com/api/login", { email, password })
       .then((res) =>
-        localStorage.setItem("token", JSON.stringify(res.data.accessToken),navigate("/"))
+        localStorage.setItem(
+          "token",
+          JSON.stringify(res.data.accessToken),
+          navigate("/")
+        )
       )
       .catch((error) => console.log(error));
   };
