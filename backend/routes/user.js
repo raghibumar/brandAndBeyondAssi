@@ -36,12 +36,12 @@ router.post("/register", async (req, res) => {
   console.log(req.body);
   try {
     const newUser = await User.create(req.body);
-    res.status(200).json({
+   return res.status(200).json({
       status: "success",
       newUser,
     });
   } catch (error) {
-    res.status(500).json({
+   return  res.status(500).json({
       status: error,
     });
   }
@@ -51,7 +51,7 @@ router.get("/users", verify, async (req, res) => {
   if (req.user.isAdmin) {
     try {
       const users = await User.find();
-      res.status(200).json(users);
+     return res.status(200).json(users);
     } catch (error) {
       return res.status(500).json(error);
     }

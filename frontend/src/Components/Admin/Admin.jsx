@@ -16,13 +16,19 @@ const Admin = () => {
         },
       })
       .then((res) => setData(res.data))
-      .catch((err) => alert("You are not an Admin"), navigate("/"));
+      .catch((err) => navigate("/"));
   }, []);
+
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    navigate("/");
+  };
   return (
     <>
       <Navbar type="Admin" />
       <div className={styles.mainDiv}>
         <h2>Users</h2>
+        <button onClick={handleLogout}>Log Out</button>
         {data.map((i) => (
           <div className={styles.inDiv}>
             <h3>Name: {i.name}</h3>
