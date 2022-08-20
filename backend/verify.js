@@ -7,13 +7,13 @@ function verify(req, res, next) {
 
     jwt.verify(token, "hellopass", (err, user) => {
       if (err) {
-        res.status(403).json("Token is not Valid");
+        return res.status(403).json("Token is not Valid");
       }
       req.user = user;
       next();
     });
   } else {
-    res.status(401).json("You are not authenticated");
+    return res.status(401).json("You are not authenticated");
   }
 }
 
